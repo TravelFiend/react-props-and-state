@@ -4,7 +4,9 @@ import Result from '../components/madlib/Result';
 
 export default class Madlib extends Component{
   state = {
-    showResult: false
+    showResult: false,
+    answers: {},
+    words: []
   }
 
   toggleResult = () =>
@@ -15,11 +17,18 @@ export default class Madlib extends Component{
     this.toggleResult();
   }
 
+  onChange = ({ target }) => {
+    this.setState(prevState => ({
+      ...prevState,
+      answers: { ...prevState.answers, [target.name]: target.value }
+    }));
+  }
+
   render() {
     const { showResult } = this.state;
     return (
       <>
-        {!showResult && <Form onSubmit={this.handleSubmit} />}
+        {!showResult && <Form onSubmit={this.handleSubmit} onChange={this.onChange} />}
         {showResult && <Result words={[]} closeResult={this.toggleResult} />}
       </>
     );
