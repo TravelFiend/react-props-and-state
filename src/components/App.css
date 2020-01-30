@@ -8,7 +8,7 @@
   align-items: center;
   background: #232323;
   color: rgb(181, 80, 80);
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid rgb(181, 80, 80);
 
   h1 {
     font-family: 'Bangers', cursive;
@@ -25,15 +25,46 @@
   padding: 15px;
   background: #232323;
   color: rgb(181, 80, 80);
+  border-top: 2px solid rgb(181, 80, 80);
+  position: fixed;
+  bottom: 0;
 }
 
-.Form {
+.questionnaire {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  height: 600px;
   background: black;
+  padding: 10vh 40px;
+  align-items: center;
 
-  input {
-    margin: 5px;
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    div {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    input {
+      margin: 5px;
+      height: 45px;
+      width: 165px;
+      border-radius: 5px;
+    }
   }
+}
+
+
+.Butts {
+  height: 40px;
+  width: 140px;
+  margin-top: 40px;
+  background: #232323;
+  color: rgb(185, 104, 104);
+  border: 2px solid rgb(225, 176, 176);
+  border-radius: 9px;
+  justify-self: center;
 }

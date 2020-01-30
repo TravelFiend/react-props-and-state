@@ -5,7 +5,7 @@ import { zoo } from '../../services/madlib';
 const Result = ({ words, closeResult }) => (
   <>
     <p>{zoo(...words)}</p>
-    <button onClick={closeResult}>X</button>
+    <button onClick={closeResult} className={StyleSheet.Butts}>X</button>
   </>
 );
 
