@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+.Header {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #232323;
+  color: rgb(181, 80, 80);
+  border-bottom: 2px solid #000000;
+
+  h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 60px;
+  }
+}
+
+.Footer {
+  height: 7vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+  background: #232323;
+  color: rgb(181, 80, 80);
+}
+
+.Form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: black;
+
+  input {
+    margin: 5px;
+  }
+}

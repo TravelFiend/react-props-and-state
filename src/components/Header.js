@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import styles from './App.css';
 
 class Header extends Component {
   render() {
     return (
-      <header>
-        <p>IrateLib</p>
+      <header className={styles.Header}>
+        <h1>IrateLib</h1>
       </header>
     );
   }
