@@ -50,7 +50,7 @@
       flex-wrap: wrap;
     }
     input {
-      margin: 5px;
+      margin: 15px;
       height: 45px;
       width: 165px;
       border-radius: 5px;
@@ -62,6 +62,7 @@
 .Butts {
   height: 40px;
   width: 140px;
+  font-size: 15px;;
   margin-top: 40px;
   background: #232323;
   color: rgb(185, 104, 104);
