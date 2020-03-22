@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+.Header {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #232323;
+  color: rgb(181, 80, 80);
+  border-bottom: 2px solid rgb(181, 80, 80);
+
+  h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 60px;
+  }
+}
+
+.Footer {
+  height: 7vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+  background: #232323;
+  color: rgb(181, 80, 80);
+  border-top: 2px solid rgb(181, 80, 80);
+  position: fixed;
+  bottom: 0;
+}
+
+.questionnaire {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  background: black;
+  padding: 10vh 40px;
+  align-items: center;
+
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    div {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    input {
+      margin: 15px;
+      height: 45px;
+      width: 165px;
+      border-radius: 5px;
+      background: rgb(225, 176, 176);
+    }
+  }
+}
+
+.Butts {
+  height: 40px;
+  width: 140px;
+  font-size: 15px;;
+  margin-top: 40px;
+  background: #232323;
+  color: rgb(185, 104, 104);
+  border: 2px solid rgb(225, 176, 176);
+  border-radius: 9px;
+  justify-self: center;
+}
+
+.Madlib {
+  height: 600px;
+  padding: 7vh 40px 13vh 40px;
+  font-family: 'PT Sans', sans-serif;
+  background: black;
+  color: rgb(225, 176, 176);
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+}
